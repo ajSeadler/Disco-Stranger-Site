@@ -1,0 +1,363 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: linear-gradient(45deg, #c61482, #95190C, #610345, #610345, #044B7F); */
+  padding: 10px 0px;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 100; /* Ensure it stays on top of other content */
+}
+
+/* Style for the announcement section */
+
+
+.logo img {
+  width: 100px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+.menu-icon {
+  display: block;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 12px;
+  background-color: black;
+  margin: 25px;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  padding: 0px;
+ background-color: rgb(218, 82, 67);
+  margin: 6px 0;
+}
+.links {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 1px;
+  background-color: rgba(211, 211, 211, 0.85); /* Transparent light grey */
+  padding: 20px;
+}
+
+.links a {
+  color: black;
+  padding: 10px;
+}
+
+.nav.active .links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+} */
+
+.swoop-background {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 90vh; /* Adjust as needed */
+  z-index: -1;
+  margin: 0px;
+  background-image: url('pics/dsc00500\ \(3\).jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-color: rgb(32, 32, 32);
+  background-position: center top;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
+}
+
+.holy-grail {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60vh;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.holy-grail-sidebar-1,
+.holy-grail-sidebar-2 {
+  width: 0px;
+  background-color: black;
+  /* background: radial-gradient(
+    circle at top left,
+    rgb(218, 82, 67),
+    #ffa600,
+    #b3ff00,
+    #00ccff,
+    #ff6699 */
+/* }; */
+  padding: 3px;
+}
+
+/* ... (Previous CSS code) ... */
+
+.holy-grail-content {
+  flex: 1;
+  background-color: rgb(32, 32, 32);
+  padding: 0px;
+  border: 0px solid rgb(28, 27, 27);
+  margin-top: 0px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Align items to the top */
+  text-align: center;
+}
+
+.ep-news {
+  color: rgb(206, 206, 206);
+  padding: 10px;
+  border: 10px;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(97, 95, 95, 0.7), 0 0 20px rgba(68, 68, 68, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.bandPics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.bandPics img {
+  max-width: 100%;
+  margin: 30px; /* Adjust as needed */
+}
+
+.bandPics img:hover {
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px; /* Adjust spacing */
+}
+
+.social-icons img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+.social-icons img:hover {
+  transform: scale(2); /* Add a slight scale effect on hover */
+  border: px solid white;
+}
+
+.separator {
+  width: 70%;
+  height: 2px; /* Adjust line thickness */
+  background-color: white;
+  margin: 20px 0; /* Adjust margin spacing */
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+/* ... (Remaining CSS code) ... */
+
+@media (max-width: 375px) {
+  .menu-icon {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .bar {
+    width: 25px; /* Adjust bar width for smaller screens */
+    height: 4px; /* Adjust bar height for smaller screens */
+    margin: 5px 0; /* Adjust bar margin for smaller screens */
+  }
+}
+
+/* Links */
+.links {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 1px;
+  background-color: rgba(211, 211, 211, 0.85);
+  padding: 20px;
+}
+
+.links a {
+  color: black;
+  padding: 10px;
+}
+
+/* Mobile navigation adjustments */
+@media (max-width: 375px) {
+  .links {
+    top: 60px; /* Adjust top position for smaller screens */
+  }
+}
+
+/* Swoop background */
+.swoop-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+  margin: 0;
+  background-image: url('pics/dsc00500\ \(3\).jpg');
+  background-size: cover;
+  background-color: rgb(32, 32, 32);
+  background-position: center top;
+}
+
+/* Mobile adjustments for swoop background */
+@media (max-width: 375px) {
+  .swoop-background {
+    height: 100vh; /* Adjust height for smaller screens */
+  }
+}
+
+/* Holy Grail layout and content */
+.holy-grail {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60vh;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Holy Grail sidebar */
+.holy-grail-sidebar-1,
+.holy-grail-sidebar-2 {
+  width: 0;
+  background-color: black;
+  padding: 3px;
+}
+
+/* Content */
+.holy-grail-content {
+  flex: 1;
+  background-color: rgb(32, 32, 32);
+  padding: 0;
+  border: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* News */
+.ep-news {
+  color: rgb(206, 206, 206);
+  padding: 10px;
+  border: 10px;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(97, 95, 95, 0.7), 0 0 20px rgba(68, 68, 68, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Band Pics */
+.bandPics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bandPics img {
+  max-width: 100%;
+  margin: 30px;
+}
+
+.bandPics img:hover {
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(2);
+  border: px solid white;
+}
+
+/* Separator */
+.separator {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin: 20px 0;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
