@@ -205,6 +205,18 @@ body {
   line-height: 5;
 }
 
+.footer {
+  background-color: rgb(32, 32, 32);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .youtube-video iframe {
     width: 700px;
