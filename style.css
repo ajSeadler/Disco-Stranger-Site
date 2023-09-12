@@ -142,7 +142,7 @@ body {
 }
 
 .about-container {
-  background-color: #f4f4f4; /* Off white background color */
+  background-color: #323232; /* Off white background color */
   padding: 20px;
   margin: 20px;
   border-radius: 10px; /* Rounded border */
@@ -171,12 +171,13 @@ body {
 }
 
 .about-bio p {
+  color: antiquewhite;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .shows-container {
-  background-color: #f5f5f5; /* Off white background */
+  background-color: #323232; /* Off white background */
   border-radius: 10px; /* Rounded borders */
   margin: 10px;
   padding: 20px; /* Add padding for spacing */
@@ -197,6 +198,7 @@ body {
 }
 
 .show-details {
+  color: antiquewhite;
   display: flex;
   flex-direction: column;
   flex: auto;
