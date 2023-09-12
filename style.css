@@ -136,6 +136,40 @@ body {
   text-align: center;
 }
 
+.about-container {
+  background-color: #f4f4f4; /* Off white background color */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px; /* Rounded border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-bio img {
+  max-width: 100%;
+  margin: 5px; /* Space between image and text */
+}
+
+.about-bio p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 @media (min-width: 768px) {
   .youtube-video iframe {
     width: 700px;
