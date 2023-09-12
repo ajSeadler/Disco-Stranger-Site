@@ -120,6 +120,11 @@ body {
   text-align: center;
 }
 
+.holy-grail-content h1 {
+  color: antiquewhite;
+  margin: 10px;
+}
+
 /* News */
 .ep-news {
   color: rgb(206, 206, 206);
@@ -168,6 +173,34 @@ body {
 .about-bio p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.shows-container {
+  background-color: #f5f5f5; /* Off white background */
+  border-radius: 10px; /* Rounded borders */
+  margin: 10px;
+  padding: 20px; /* Add padding for spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center content vertically */
+}
+
+.show {
+  flex: 1; /* Distribute available space evenly */
+  margin: 10px; /* Add spacing between shows */
+}
+
+.show img {
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  height: auto;
+}
+
+.show-details {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  line-height: 5;
 }
 
 @media (min-width: 768px) {
@@ -256,6 +289,19 @@ body {
   }
 
   .about-container {
-    margin-top: 170px;
+    margin-top: 160px;
   }
+  
+.show-details {
+  text-align: right;
+  line-height: 2;
+  font-size:  .75rem;
 }
+
+.show img {
+  margin-left: -25px;
+  max-width: 250%;
+}
+
+}
+
