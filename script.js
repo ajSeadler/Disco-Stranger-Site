@@ -28,7 +28,7 @@ function showCountdown() {
 
   // Display the countdown in the specified element
   const countdownElement = document.getElementById("countdown");
-  countdownElement.innerHTML = `DISCO STRANGER @ ACM LIVE ROOM FIRDAYS: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  countdownElement.innerHTML = `DISCO STRANGER @ ACM LIVE ROOM FRIDAYS: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
 
   // Update the countdown every second (1000 milliseconds)
   setTimeout(showCountdown, 1000);
