@@ -85,11 +85,20 @@ body {
   flex-direction: column;
 }
 
-/* Swoop background */
-.swoop-background {
+.count-news {
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 100%;
-  overflow: hidden;
+  text-align: center;
+  top: 200px;
+  font-family: 'Impact', sans-serif;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  color:rgb(218, 82, 67);
+  background: linear-gradient(45deg, #130502, #591502);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 /* Holy Grail layout and content */
@@ -121,21 +130,85 @@ body {
   margin-top: 135px;
 }
 
-#countdown {
-  background-color: rgba(180, 180, 180, 0.2);
+/* Countdown timer styles */
+/* Countdown timer styles */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
 }
 
-/* News */
-.ep-news {
-  color: rgb(206, 206, 206);
-  font-size: .8rem;
-  padding: 5px;
-  border: 0px;
-  margin-top: 160px;
-  text-align: left;
-  text-shadow: 0 0 10px rgba(97, 95, 95, 0.7), 0 0 20px rgba(68, 68, 68, 0.5),
-    0 0 30px rgba(255, 255, 255, 0.3);
+.circle {
+  background-color: #1d1b1b;
+
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* To stack the countdown and label vertically */
+  color: white;
 }
+
+/* Styles for the countdown values */
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-size: 30px;
+  margin-bottom: 10px; /* Spacing between countdown and label */
+}
+
+/* Styles for the countdown labels */
+.label {
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+
+#time {
+  display: flex;
+  gap: 50px;
+  color: antiquewhite;
+
+}
+
+ /* .countdown {
+  text-align: center;
+  font-size: 36px;
+  color: #FFD700; 
+  margin-bottom: 20px;
+}
+
+.ep-news {
+  text-align: center;
+  background-color: #000; 
+  padding: 5px;
+  margin-top: 130px;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.ep-news h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.ep-news p {
+  font-size: 16px;
+} */
+
+/* #countdown-timer {
+  font-weight: bold;
+  font-size: 48px;
+  margin: 10px 0;
+} */
+
+
+
+
 
 /* YouTube videos */
 .youtube-video {
@@ -232,7 +305,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
   
 }
 
@@ -301,7 +374,13 @@ body {
   }
 
   .ep-news {
-    margin-top: 200px;
+    margin-top: 170px;
+
+  }
+
+  .count-news {
+    font-size: .7rem
+    ;
   }
 
   .youtube-video iframe {
