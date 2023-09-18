@@ -74,6 +74,10 @@ body {
     padding: 65px;
 }
 
+.hideMe {
+  display: none;
+}
+
 .links a {
   color: black;
   padding: 10px;
@@ -85,7 +89,7 @@ body {
   flex-direction: column;
 }
 
-.count-news {
+/* .count-news {
   display: flex;
   justify-content: center;
   position: relative;
@@ -99,7 +103,7 @@ body {
   background: linear-gradient(45deg, #130502, #591502);
   padding: 10px 20px;
   border-radius: 5px;
-}
+} */
 
 /* Holy Grail layout and content */
 .holy-grail {
@@ -116,7 +120,7 @@ body {
   background-color: rgb(32, 32, 32);
   padding: 0;
   border: 0;
-  margin-top: 0;
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,57 +134,7 @@ body {
   margin-top: 135px;
 }
 
-/* Countdown timer styles */
-/* Countdown timer styles */
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 250px;
-}
 
-.circle {
-  background-color: #1d1b1b;
-
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  margin: 0 px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* To stack the countdown and label vertically */
-  color: white;
-}
-
-/* Styles for the countdown values */
-#days,
-#hours,
-#minutes,
-#seconds {
-  font-size: 30px;
-  margin-bottom: 10px; /* Spacing between countdown and label */
-}
-
-/* Styles for the countdown labels */
-.label {
-  font-size: 12px; /* Adjust font size as needed */
-}
-
-
-#time {
-  display: flex;
-  gap: 50px;
-  color: antiquewhite;
-
-}
-
- /* .countdown {
-  text-align: center;
-  font-size: 36px;
-  color: #FFD700; 
-  margin-bottom: 20px;
-}
 
 .ep-news {
   text-align: center;
@@ -198,13 +152,8 @@ body {
 
 .ep-news p {
   font-size: 16px;
-} */
+} 
 
-/* #countdown-timer {
-  font-weight: bold;
-  font-size: 48px;
-  margin: 10px 0;
-} */
 
 
 
