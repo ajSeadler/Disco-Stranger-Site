@@ -336,7 +336,7 @@ body {
 }
 
 /* Mobile navigation adjustments */
-@media (max-width: 368px) {
+@media (max-width: 768px) {
   .menu-icon {
     z-index: 1;
     padding: 11px;
@@ -378,7 +378,7 @@ body {
   }
 
   .about-container {
-    margin-top: -25px;
+    margin-top: 50px;
   }
 
   .show-details {
