@@ -1,6 +1,6 @@
 # Disco-Stranger-Site
 
-Welcome to my band's website! This was one of the first sites I have ever built. 
+Welcome to my band's website! This is one of the first sites I have ever built. 
 The site is built using HTML, CSS, and Javascript.
 
 Key features include: 
