@@ -88,6 +88,11 @@ body {
 .remove {
   color: #aeaeae;
 }
+
+.nav-butt {
+  background-color: rgb(255, 103, 86);
+  color: #323232;
+}
 /* Holy Grail layout and content */
 .holy-grail {
   display: flex;
