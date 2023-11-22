@@ -13,7 +13,7 @@ body {
 }
 
 /* Navigation bar */
-.nav {
+/* .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,14 +25,14 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-}
+} */
 
-.logo img {
+/* .logo img {
   width: 100px;
   height: auto;
   margin-top: 20px;
   margin-left: 23px;
-}
+} */
 
 .menu-icon {
   z-index: 1;
@@ -43,24 +43,6 @@ body {
   margin: 25px;
 }
 
-.menu-icon.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-icon.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-icon.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(10px, -10px);
-}
-
-.bar {
-  width: 30px;
-  height: 5px;
-  background-color: rgb(218, 82, 67);
-  margin: 6px 0;
-}
 
 .links {
   display: none;
@@ -74,6 +56,8 @@ body {
     padding: 65px;
 }
 
+
+
 .hideMe {
   display: none;
 }
@@ -84,10 +68,7 @@ body {
   font-size: 1.5rem;
 }
 
-.nav.active .links {
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* .count-news {
   display: flex;
@@ -104,7 +85,9 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
 } */
-
+.remove {
+  color: #aeaeae;
+}
 /* Holy Grail layout and content */
 .holy-grail {
   display: flex;
@@ -350,12 +333,12 @@ body {
     height: 4px;
     margin: 5px 0;
   }
-
+/* 
   .links {
     margin: 11px;
     top: 21px;
     padding: 35px;
-  }
+  } */
 
   .holy-grail-content {
     margin-top: 90px;

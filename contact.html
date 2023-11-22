@@ -5,54 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disco Stranger Music</title>
   <link rel="stylesheet" href="style.css">
-  
+  <!-- Bootstrap CSS CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: rgb(32,32,32);">
  
-  <header class="nav">
-    <div class="logo">
-      <img src="pics/discologo.PNG" alt="Logo">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="pics/discologo.PNG" alt="Logo" width="50">
+       <span class="remove">Disco Stranger Music</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shows.html">Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="menu-icon" id="menuIcon">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    <nav class="links" id="links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="shows.html">Shows</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    
-
-
   </header>
   
-  <div class="holy-grail">
-    <section class="holy-grail-sidebar-1">
-      <!-- Sidebar 1 content here -->
-    </section>
-    <section class="holy-grail-content-contact">
-      <h1>CONTACT US: discostrangermusic@gmail.com</h1>
-       <div class="social-icons" style="border: none;">
-          <a href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO" target = "_blank"><img src="logos/spotify.svg" alt="Spotify"></a>
-          <a href="https://www.youtube.com/@discostranger7103" target = "_blank"><img src="logos/youtube.svg" alt="Youtube"></a>
-          <a href="https://www.instagram.com/discostranger/?hl=en" target = "_blank"><img src="logos/instagram.svg" alt="Instagram"></a>
-          <a href="https://www.facebook.com/discostrangerband/" target = "_blank"><img src="logos/facebook.svg" alt="Facebook"></a>
+  <div class="container mt-5 text-center">
+    <section class="row">
+      <div class="col-md-8 mx-auto">
+        <h1 style="color: #fff;">Contact Us</h1>
+        <p style="color:#fff">Email: discostrangermusic@gmail.com</p>
+        <div class="social-icons mb-4">
+          <a href="https://open.spotify.com/artist/3SwSE7OtWzLOrc32Eq54gO" target="_blank"><img src="logos/spotify.svg" alt="Spotify"></a>
+          <a href="https://www.youtube.com/@discostranger7103" target="_blank"><img src="logos/youtube.svg" alt="Youtube"></a>
+          <a href="https://www.instagram.com/discostranger/?hl=en" target="_blank"><img src="logos/instagram.svg" alt="Instagram"></a>
+          <a href="https://www.facebook.com/discostrangerband/" target="_blank"><img src="logos/facebook.svg" alt="Facebook"></a>
         </div>
-        <div class="separator"></div>
-
-    </section>
-    <section class="holy-grail-sidebar-2">
-      <!-- Sidebar 2 content here -->
+        
+      </div>
+      <div class="col-md-4 mx-auto">
+        <!-- Sidebar content here -->
+      </div>
     </section>
   </div>
-  <footer class="footer">
+
+  <footer class="footer mt-5 bg-dark text-light text-center">
     <p>&copy; Disco Stranger Music 2023. All Rights Reserved.</p>
   </footer>
   
-  <script src="script.js"></script> <!-- Include JavaScript file -->
+  <!-- Bootstrap JS CDN link (Place it before your custom script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
